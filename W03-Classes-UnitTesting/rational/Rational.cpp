@@ -55,7 +55,7 @@ string Rational::print() const{
   
   
 // Returns a new Rational number, does not change either.
-Rational Rational::add(const Rational &other) const{
+Rational Rational::operator+(const Rational &other) const{
   // Fix order of commented lines below
   Rational ret;
   /* other.numerator * denominator;
@@ -66,7 +66,7 @@ Rational Rational::add(const Rational &other) const{
 }
   
 // Returns a new Rational number, does not change either.
-Rational Rational::mult(const Rational &other) const{
+Rational Rational::operator*(const Rational &other) const{
   // Fill me in
   return Rational();
 }
@@ -97,15 +97,6 @@ Rational Rational::negate() const{
   return Rational();
 }
 
-Rational Rational::subtract(const Rational &other) const{
-  // Fill me in
-  return Rational();
-}
-
-Rational Rational::divide(const Rational &other) const{
-  // Fill me in
-  return Rational();
-}
 
 bool Rational::isNotEqualTo(const Rational &other) const{
   // Fill me in

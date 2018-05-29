@@ -39,12 +39,12 @@ class Rational{
   bool isLessThanOrEqualTo(const Rational &) const;
   
   // These return a new Rational number, does not change either.
-  Rational add(const Rational &other) const;
-  Rational mult(const Rational &other) const;
+  Rational operator+(const Rational &other) const;
+  Rational operator*(const Rational &other) const;
   Rational invert() const;
   Rational negate() const;
-  Rational subtract(const Rational &) const;
-  Rational divide(const Rational &) const;
+  Rational operator-(const Rational &) const;
+  Rational operator/(const Rational &) const;
 
 };
 
