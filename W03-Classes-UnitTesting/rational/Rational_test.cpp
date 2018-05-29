@@ -1,6 +1,8 @@
-//#include <limits.h>
+/* Name: < Fill me in>
+   Date: < Fill me in>
+   Desc: Unit tests for the Rational Class
+*/
 #include "gtest/gtest.h"
-
 #include "Rational.h"
 
 
@@ -40,56 +42,4 @@ TEST(getDenominator, Overloaded2){
   EXPECT_EQ(a.getDenominator(), 20);
 }
 
-
-TEST(setDenominator, 1){
-  Rational a;
-  a.setDenominator(5);
-  EXPECT_EQ(a.getDenominator(), 5);
-}
-
-TEST(setDenominator, 2){
-  Rational a;
-  a.setDenominator(5);
-  EXPECT_EQ(a.getDenominator(), 5);
-}
-
-TEST(getNumerator, 3){
-  Rational a(5.6);
-  EXPECT_EQ(a.getNumerator(), 5);
-}
-
-TEST(setDenominator, ){
-  Rational a;
-  a.setDenominator(0);
-  EXPECT_EQ(a.getDenominator(), 1);
-}
-
-TEST(equalto, 1){
-  Rational a;
-  Rational b;
-  EXPECT_EQ(a.isEqualTo(b), true);
-}
-
-TEST(equalto, 2){
-  Rational a(2,1);
-  Rational b(2,1);
-  EXPECT_EQ(a.isEqualTo(b), true);
-}
-
-TEST(equalto, 3){
-  Rational a(2,1);
-  Rational b(4,2);
-  EXPECT_EQ(a.isEqualTo(b), true);
-}
-
-TEST(equalto, 4){
-  Rational a(2,1);
-  Rational b(-4,-2);
-  EXPECT_EQ(a.isEqualTo(b), true);
-}
-
-TEST(equalto, 5){
-  Rational a(2,1);
-  Rational b(-4,2);
-  EXPECT_EQ(a.isEqualTo(b), false);
-}
+// Write more tests here!
