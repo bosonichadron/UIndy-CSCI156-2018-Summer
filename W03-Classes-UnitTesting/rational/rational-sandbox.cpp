@@ -15,10 +15,10 @@ int main(){
   cout << b.getDenominator() << " = 2" << endl;
   Rational c;
   c.setNumerator(7);
-  c.setDenominator(6);
+  c.setDenominator(6);  
  
-  cout << a.add(b).print() << " = 3/2" << endl;
-  cout << a.mult(b).print() << " = 1/2" << endl;
+  cout << (a + b).print() << " = 3/2" << endl;
+  cout << (a * b).print() << " = 1/2" << endl;
   cout << a.print() << " = 1/1" << endl;
   cout << b.print() << " = 1/2" << endl;
   
