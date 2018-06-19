@@ -9,4 +9,10 @@ int main(){
   // Example usage of the SmartArray class
   SmartArray<int> a;
   a[3] = 5;
-  cout << a << "[0,0,0,3]" << endl;
+  a[10] = 2;
+  cout << a << " == [0,0,0,3]" << endl;
+  
+  SmartArray<string> b;
+  b[3] = "no";
+  cout << b << endl; 
+}

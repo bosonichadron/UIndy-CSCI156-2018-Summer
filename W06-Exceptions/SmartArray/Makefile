@@ -1,9 +1,9 @@
 CC=g++
 CFLAGS=-c -Wall -ggdb -I.
 LDFLAGS=
-SOURCES=SmartArray.cpp SmartArray-sandbox.cpp
+SOURCES=SmartArray-sandbox.cpp
 EXECUTABLE=smartarray-sandbox
-TESTS=SmartArray.cpp SmartArray_test.cpp
+TESTS=SmartArray_test.cpp
 
 
 #TODO: Need a more elegant way of specifying objects and tests
