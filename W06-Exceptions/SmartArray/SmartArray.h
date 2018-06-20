@@ -24,7 +24,7 @@ class SmartArray{
   SmartArray(T);  // Defines a different default value.
   SmartArray(const SmartArray &){};
   ~SmartArray();
-  SmartArray& operator=(const SmartArray &other){};
+  SmartArray<T>& operator=(const SmartArray &other){};
 
   T& operator[](int);       // Set data in array, NO negatives
 
