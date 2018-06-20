@@ -20,19 +20,19 @@ template <typename T>
 class SmartArray{
   public:
   
-  SmartArray(); 
+  SmartArray();   // Default is T().
   SmartArray(T);  // Defines a different default value.
-  SmartArray(const SmartArray &){};
+  SmartArray(const SmartArray &){};  // The {}; implements this until you do below.
   ~SmartArray();
   SmartArray<T>& operator=(const SmartArray &other){};
 
   T& operator[](int);       // Set data in array, NO negatives
 
-  int size() const;
+  int size() const;  // Return the number of elements in the SmartArray
   
-  SmartArray operator+(const SmartArray &) const;
-  bool operator==(const SmartArray &) const;
-  int count(T) const{return 0;}
+  SmartArray operator+(const SmartArray &) const;  // Append this to the other, return new one
+  bool operator==(const SmartArray &) const;  // Are they the same?
+  int count(T) const{return 0;}   // How many times does this element exist?
   
   string getAsString() const;
   
