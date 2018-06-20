@@ -30,7 +30,7 @@ class SmartArray{
 
   int size() const;  // Return the number of elements in the SmartArray
   
-  SmartArray operator+(const SmartArray &) const;  // Append this to the other, return new one
+  SmartArray<T> operator+(const SmartArray &) const;  // Append this to the other, return new one
   bool operator==(const SmartArray &) const;  // Are they the same?
   int count(T) const{return 0;}   // How many times does this element exist?
   
