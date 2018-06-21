@@ -22,16 +22,16 @@ class SmartArray{
   
   SmartArray();   // Default is T().
   SmartArray(T);  // Defines a different default value.
-  SmartArray(const SmartArray &){};  // The {}; implements this until you do below.
+  SmartArray(const SmartArray<T> &){};  // The {}; implements this until you do below.
   ~SmartArray();
-  SmartArray<T>& operator=(const SmartArray &other){};
+  SmartArray<T>& operator=(const SmartArray<T> &other){};
 
   T& operator[](int);       // Set data in array, NO negatives
 
   int size() const;  // Return the number of elements in the SmartArray
   
-  SmartArray<T> operator+(const SmartArray &) const;  // Append this to the other, return new one
-  bool operator==(const SmartArray &) const;  // Are they the same?
+  SmartArray<T> operator+(const SmartArray<T> &) const;  // Append this to the other, return new one
+  bool operator==(const SmartArray<T> &) const;  // Are they the same?
   int count(T) const{return 0;}   // How many times does this element exist?
   
   string getAsString() const;
