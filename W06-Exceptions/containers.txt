@@ -1,0 +1,41 @@
+arrays
+    elements are adjacent in memory
+    [] has constant time lookup.
+    size must be known at compile time
+    no warning if you go off the end
+vector
+    elements are adjacent in memory
+    [] has constant time lookup.
+    size is dynamic at runtime
+    can go off the end with [], but not with .at()
+    can do push_back, no push_front
+list - doubly-linked list
+    elements are NOT adjacent in memory
+    does not have constant time lookup for random location
+    constant time for FIRST and LAST elements.
+    push_back, push_front
+    pop_back, pop_front
+queue - Line bank, grocery store. - FIFO
+    enqueue()
+    dequeue()
+    does not have [] access
+    linked-list
+dequeue - Doubly-ended queue - double-linked list.
+    push/pop on either end.
+map - key/value pair storage system
+    key can be any typed-thing (has to implement ==)
+    ("bob", 4.5)
+    ("greg", 9.3)
+    keys must be unique
+    count - 0/1
+set - group of numbers, with NO REPEATS, order is not important
+    insert
+    erase
+    count - 0/1
+bag - group of numbers, REPEATS ok, order is not important
+    insert
+    erase
+    count - 0,1,2.....
+
+
+
