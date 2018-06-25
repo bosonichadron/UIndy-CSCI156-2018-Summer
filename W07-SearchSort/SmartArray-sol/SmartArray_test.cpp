@@ -245,5 +245,42 @@ TEST(addition,default_val1){
   EXPECT_EQ(c[2], 5);
 }
 
+TEST(sort,1){
+  SmartArray<int> a;
+  a[0] = 5;
+  a[1] = 6;
+  a[2] = 7;
+  a[3] = 8;
+  a.sort();
+  EXPECT_EQ(a[0], 5);
+  EXPECT_EQ(a[1], 6);
+  EXPECT_EQ(a[2], 7);
+  EXPECT_EQ(a[3], 8);
+}
+
+TEST(sort,2){
+  SmartArray<int> a;
+  a[0] = 8;
+  a[1] = 6;
+  a[2] = 7;
+  a[3] = 5;
+  a.sort();
+  EXPECT_EQ(a[0], 5);
+  EXPECT_EQ(a[1], 6);
+  EXPECT_EQ(a[2], 7);
+  EXPECT_EQ(a[3], 8);
+}
+
+TEST(sort,3){
+  SmartArray<int> a;
+  a[0] = 5;
+  a[1] = 7;
+  a[2] = 6;
+  a.sort();
+  EXPECT_EQ(a[0], 5);
+  EXPECT_EQ(a[1], 6);
+  EXPECT_EQ(a[2], 7);
+}
+
 
 
