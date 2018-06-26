@@ -1,5 +1,5 @@
 CC=g++
-CFLAGS=-c -Wall -ggdb -I. -fprofile-arcs -ftest-coverage
+CFLAGS=-c -Wall -ggdb -I.
 LDFLAGS=
 SOURCES=SmartArray-sandbox.cpp
 EXECUTABLE=smartarray-sandbox
