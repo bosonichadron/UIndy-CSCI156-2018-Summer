@@ -7,8 +7,8 @@ import time
 
 IMAGE_URL = 'https://marion-in.weatherstem.com/skycamera/marion-in/uindy/cumulus/snapshot.jpg'
 
-S3_ACCESS_KEY = 'AKIAIRGH6IFSG4WFYS6Q'
-S3_SECRET_KEY = '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'
+S3_ACCESS_KEY = 'key'
+S3_SECRET_KEY = 'key'
 S3_BUCKET = 'uindy-weathercam'
 S3_REGION = 's3-us-east-2.amazonaws.com'
 
