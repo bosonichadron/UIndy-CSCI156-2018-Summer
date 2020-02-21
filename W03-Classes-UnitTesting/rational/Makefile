@@ -7,7 +7,7 @@ TESTS=Rational.cpp Rational_test.cpp
 
 
 #TODO: Need a more elegant way of specifying objects and tests
-GTESTDIR=~/workspace/googletest
+GTESTDIR=~/environment/googletest
 OBJECTS=$(SOURCES:.cpp=.o)
 
 FLAGS   = -Iinclude
